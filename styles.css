@@ -1,0 +1,344 @@
+body {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+.bar {
+    width: 100%;
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.inner-bar {
+    min-width: auto;
+    font: 13px/27px Roboto, RobotoDraft, Arial, sans-serif;
+    z-index: 986;
+    height: 48px;
+    color: black;
+    position: relative;
+}
+
+.inner-bar-box {
+    padding-left: 0;
+    float: right;
+    box-sizing: border-box;
+    height: 48px;
+    line-height: normal;
+    padding: 0 4px;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    user-select: none;
+    /* prevents the elements within this class from being highlighted/selected. */
+    -webkit-user-select: none;
+    /* Does the same as above but for safari */
+}
+
+.inner-bar-box-text {
+    font-family: arial, sans-serif;
+    line-height: normal;
+    padding-right: 15px;
+    display: block;
+}
+
+a {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    /* Remember to put a height so flexbox can align it vertically properly */
+    max-height: 98vh;
+    /* height of the browser viewport */
+    display: flex;
+    flex-direction: column;
+    /* We don't have a justify-content: center; here because we want the bar at the top of the page */
+    align-items: center;
+    overflow: hidden;
+}
+
+.container2 {
+    display: flex;
+    min-height: 98vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container3 {
+    margin-bottom: 55%;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.images-text {
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: relative;
+    left: 215px;
+    top: -20px;
+    white-space: nowrap;
+}
+
+.search-field {
+    display: flex;
+    padding-top: 6px;
+    max-height: 160px;
+    width: auto;
+    max-width: 584px;
+}
+
+.curved-box {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 44px;
+    width: 500px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+}
+
+.curved-box:hover {
+    background-color: #fff;
+    /* in here, box-shadow: h-offset, v-offset, blur */
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.magnifying-box {
+    fill: #9aa0a6;
+    /* used to color SVG icons */
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.field {
+    white-space: pre;
+    font-size: 16px;
+    height: 34px;
+    width: 95%;
+    margin: 10px;
+    border: none;
+}
+
+.field:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    height: 70px;
+    padding-top: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.image-search {
+    height: 44px;
+    width: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex: 0 0 auto;
+    padding: 0;
+}
+
+.image-search-box {
+    background: none;
+    color: #4285f4;
+    height: 24px;
+    width: 24px;
+    margin: auto;
+}
+
+.svg {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    position: relative;
+}
+
+.appbar {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+.border {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.advanced {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+
+.find {
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    font-size: 16px;
+    min-height: 42px;
+    font-weight: 500;
+    color: #333;
+}
+
+.find2 {
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.fields {
+    clear: both;
+    width: 100%;
+}
+
+.field-row {
+    clear: both;
+}
+
+.field-text-box {
+    clear: both;
+    float: left;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.field-text {
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.field-input-box {
+    float: left;
+    min-width: 167px;
+    min-height: 41px;
+    width: 50%;
+}
+
+.field-input {
+    padding-right: 16px;
+}
+
+.advanced-input {
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+}
+
+/* For every input tag with a type attribute of "text" */
+
+input[type="text"] {
+    width: 100%;
+    text-align: left;
+}
+
+.advanced-button-row {
+    clear: both;
+}
+
+.left-column {
+    float: left;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.advanced-button-column {
+    float: left;
+    min-width: 167px;
+    min-height: 41px;
+    width: 50%;
+}
+
+.advanced-button {
+    user-select: none;
+    /* Prevents the text within the element from being selected */
+    line-height: 100%;
+    height: 30px;
+    min-width: 120px;
+    float: right;
+    margin: 10px 0;
+    /* top and bottom are 10px, right and left are 0px */
+    padding: 0 12px;
+    /* top and bottom are 0px, right and left are 12px */
+    box-shadow: none;
+    background-color: #4d90fe;
+    /* i learned ao */
+    background-image: -moz-linear-gradient(top, #4d90fe, #4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    outline: 0;
+    font-style: inherit;
+}
+
+.advanced-button:hover {
+    background-color: #357ae8;
+    background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
+    border: 1px solid #2f5bb7;
+    border-image: initial;
+}
